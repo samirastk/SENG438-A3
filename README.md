@@ -1,1 +1,3 @@
-# SENG438-A3
+seng438-a3
+
+Read [the assignment guideline](seng438-a3.md) 
