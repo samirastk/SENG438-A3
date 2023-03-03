@@ -22,40 +22,60 @@ In this assignment we did white box testing for the methods of org.jfree.data.Ra
 ### Data Flow Graph
 ### Def-Use sets per statement
 DEF(123) = {data, column}, USE(123) = ∅
+
 DEF(124) = ∅, USE(124) = {data}
+
 DEF(125) = {total}, USE(125) = ∅
+
 DEF(126) = {rowCount}, USE(126) = {data}
+
 DEF(127) = {r}, USE(127) = {r, rowCount}
+
 DEF(128) = {n}, USE(128) = {data, r, column}
+
 DEF(129) = ∅, USE(129) = {n}
+
 DEF(130) = {total}, USE(130) = {total, n}
+
 DEF(133) = {r2}, USE(133) = {rowCount, r2}
+
 DEF(134) = {n}, USE(134) = {r2, column, data}
+
 DEF(135) = ∅, USE(135) = {n}
+
 DEF(136) = {total}, USE(136) = {n, total}
+
 DEF(139) = ∅, USE(139) = {total}
+
 
 ### DU pairs per Variable
 data (1, 1)
-column (1, 2) (1, 6)
-r (2, 2) 
-n (2, 4) (6, 8)
-r2 (6, 6)
-total (1, 4) (4, 4) (8, 8) (8, 10) (1,10) (1,8)
 
+column (1, 2) (1, 6)
+
+r (2, 2) 
+
+n (2, 4) (6, 8)
+
+r2 (6, 6)
+
+total (1, 4) (4, 4) (8, 8) (8, 10) (1,10) (1,8)
 
 
 ## Range.intersects
 ## Data Flow Graph
 ### Def-Use sets per statement
 DEF(177) = ∅, USE(177) = {b0, b1}
-DEF(179) = ∅, USE(179) = {b0, lower}
-DEF(179) = ∅, USE(179) = {b1, lower}
-DEF(183) = ∅, USE(183) = {b0, upper, b1}
 
+DEF(179) = ∅, USE(179) = {b0, lower}
+
+DEF(179) = ∅, USE(179) = {b1, lower}
+
+DEF(183) = ∅, USE(183) = {b0, upper, b1}
 
 ### DU pairs per Variable
 b0 (1, 2) (1, 4)
+
 b1 (1, 3), (1, 4)
 
 # 3 A detailed description of the testing strategy for the new unit test
