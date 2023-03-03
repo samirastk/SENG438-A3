@@ -14,7 +14,7 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-Text…
+In this assignment we did white box testing for the methods of org.jfree.data.Range.java and org.jfree.data.DataUtilities.java classes. We tested the code of all the methods in these two classes based on statemetn ocverage, brach coverage and condition coverage. We also did manual testing for DataUtilities.calculateColumnTotal(Values2D data, int column) and Range.intersects(double b0, double b1). For each of these methids, we covered 
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
