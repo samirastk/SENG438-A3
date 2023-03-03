@@ -104,7 +104,7 @@ Text…
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+We had a lot of difficulty to just run the code since the instructions given were not proper. We  had to do a lot of research and brainstorming on out part to just get this SUT running. There were no clear instructions on which libraries we had to import from Assignment 2 or assignment 1 or both. Even doing the manual part was not a cup of tea since the intructions were very vague.
 
 # 10 Comments/feedback on the lab itself
 
