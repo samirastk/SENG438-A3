@@ -1,0 +1,42 @@
+<component name="libraryTable">
+  <library name="bsh-core-2.0b4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/bsh-core-2.0b4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cglib-nodep-2.1_3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gnujaxp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-library-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jcommon-1.0.0-rc1-cvs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jcommon-1.0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfreechart-1.0.19-experimental.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfreechart-1.0.19-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfreesvg-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-junit3-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-junit4-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-legacy-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-script-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-old.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/objenesis-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/orsoncharts-1.4-eval-nofx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/orsonpdf-1.6-eval.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/swtgraphics2d.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/cglib-2.1_3-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-library-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-junit3-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-junit4-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-legacy-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jmock-script-2.5.1.jar!/" />
+    </SOURCES>
+  </library>
+</component>
