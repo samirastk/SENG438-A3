@@ -14,7 +14,7 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-In this assignment we did white box testing for the methods of org.jfree.data.Range.java and org.jfree.data.DataUtilities.java classes. We tested the code of all the methods in these two classes based on statemetn ocverage, brach coverage and condition coverage. We also did manual testing for DataUtilities.calculateColumnTotal(Values2D data, int column) and Range.intersects(double b0, double b1). For each of these methids, we covered 
+In this assignment we did white box testing for the methods of org.jfree.data.Range.java and org.jfree.data.DataUtilities.java classes. We tested the code of all the methods in these two classes based on statemetn ocverage, brach coverage and condition coverage. We also did manual testing for DataUtilities.calculateColumnTotal(Values2D data, int column) and Range.intersects(double b0, double b1). For each of these methods, we covered the data flow graph, the def-use sets per statement, list all DU-pairs per variable, for each test case show which pairs are covered and  calculate the DU-Pair coverage.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
@@ -50,4 +50,4 @@ Text…
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+The lab was extremely hard to interpret. Instructions were very unclear, and the entire group had a hard time finding what we had to do and what we had to submit. The calculations the lab asked for were also unclear and were not clearly discussed during class. This lead to further confusion and frustration. We asked for help from the TA, but the responses did not clear confusion. 
