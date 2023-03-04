@@ -11,6 +11,7 @@ import org.jmock.Mockery;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import javax.xml.crypto.Data;
 import java.util.Arrays;
 
 public class DataUtilitiesTest extends DataUtilities {
@@ -36,6 +37,41 @@ public class DataUtilitiesTest extends DataUtilities {
         assertEquals(false, result);
     }
 
+    @Test
+    public void equalDiffLength() {
+        double [][] a = {{0},{1}};
+        double [][] b = {{0},{1}, {2}};
+        boolean result = DataUtilities.equal(a, b);
+        assertEquals(false, result);
+    }
+
+    @Test
+    public void equalSameArrays() {
+        double [][] a = {{0},{1},{2}};
+        double [][] b = {{0},{1},{2}};
+        boolean result = DataUtilities.equal(a, b);
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void equalDiffArrays() {
+        double [][] a = {{0},{1},{2}};
+        double [][] b = {{1},{2},{3}};
+        boolean result = DataUtilities.equal(a, b);
+        assertEquals(false, result);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCloneNULL(){
+        DataUtilities.clone(null);
+    }
+
+    @Test
+    public void testCloneWithArray() {
+        double[][] a = {{1}, {2}, {3}};
+        double [][] result = DataUtilities.clone(a);
+        assertEquals(Arrays.deepToString(a), Arrays.deepToString(result));
+    }
 
     @Test
     public void calculateColumnTotalForFiveValues() {
@@ -82,6 +118,33 @@ public class DataUtilitiesTest extends DataUtilities {
     }
 
     @Test
+    public void calculateColumnTotalValidRows() {
+        // setup
+        mockingContext.checking(new Expectations() {
+            {
+                one(values).getRowCount();
+                will(returnValue(5));
+                one(values).getValue(0, 0);
+                will(returnValue(7.5));
+                one(values).getValue(1, 0);
+                will(returnValue(2.5));
+                one(values).getValue(2, 0);
+                will(returnValue(0));
+                one(values).getValue(3, 0);
+                will(returnValue(-10.4));
+                one(values).getValue(4, 0);
+                will(returnValue(5.4));
+            }
+        });
+        int[] validRows = {0,1,4};
+
+        // test
+        double result = DataUtilities.calculateColumnTotal(values, 0, validRows);
+        // verify
+        assertEquals(15.4, result, .000000001d);
+    }
+
+    @Test
     public void calculateRowTotalForFiveValues() {
         // setup
         mockingContext.checking(new Expectations() {
@@ -107,7 +170,7 @@ public class DataUtilitiesTest extends DataUtilities {
     }
 
     @Test
-    public void calculateRowTotalForTwoValues() {
+    public void calculateRowTotalForNegativeTwoValues() {
         // setup
         mockingContext.checking(new Expectations() {
             {
@@ -123,6 +186,32 @@ public class DataUtilitiesTest extends DataUtilities {
         double result = DataUtilities.calculateRowTotal(values, 1);
         // verify
         assertEquals(-5.0, result, .000000001d);
+    }
+
+    @Test
+    public void calculateRowTotalValidRows() {
+        // setup
+        mockingContext.checking(new Expectations() {
+            {
+                one(values).getColumnCount();
+                will(returnValue(5));
+                one(values).getValue(0, 0);
+                will(returnValue(7.5));
+                one(values).getValue(0, 1);
+                will(returnValue(2.5));
+                one(values).getValue(0, 2);
+                will(returnValue(0));
+                one(values).getValue(0, 3);
+                will(returnValue(-10.4));
+                one(values).getValue(0, 4);
+                will(returnValue(5.4));
+            }
+        });
+        int[] validRows = {0,1,4};
+        // test
+        double result = DataUtilities.calculateRowTotal(values, 0, validRows);
+        // verify
+        assertEquals(15.4, result, .000000001d);
     }
 
     @Test(expected = IllegalArgumentException.class)
